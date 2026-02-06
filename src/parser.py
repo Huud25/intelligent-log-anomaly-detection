@@ -10,7 +10,7 @@ print (contagem)
 
 falhas_por_usuario = (
     logs[logs["event"] == "login_failed"]["username"]
-    .value_counts
+    .value_counts()
 )
 
 print ("\nFalhas de login por usuário:")
