@@ -15,3 +15,11 @@ falhas_por_usuario = (
 
 print ("\nFalhas de login por usuário:")
 print (falhas_por_usuario)
+
+falhas_por_ip = (
+    logs[logs["event"] == "login_failed"]["source_ip"]
+    .value_counts()
+)
+
+print ("\nFalhas de login por ip:")
+print (falhas_por_ip)
