@@ -23,3 +23,10 @@ falhas_por_ip = (
 
 print ("\nFalhas de login por ip:")
 print (falhas_por_ip)
+
+limites = 3
+
+ips_suspeitos = falhas_por_ip[falhas_por_ip >= limites]
+
+print(f"\nIPs suspeitos - Total {limites} falhas:")
+print(ips_suspeitos)
