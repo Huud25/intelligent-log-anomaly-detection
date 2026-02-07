@@ -1,6 +1,6 @@
-import pandas as pd
+import pandas as pd          
 
-logs = pd.read_csv("data/raw/auth_logs.csv")
+logs = pd.read_csv("data/raw/auth_logs.csv") 
 
 print ("Total de linhas:", len(logs))
 
